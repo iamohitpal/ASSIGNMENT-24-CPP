@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void findlargestdigit(int n)
+{
+    int m,i=0,rem[100];
+    int k=n;
+    while(n>0)
+    {
+    rem[i]=n%10;
+    n=n/10;
+    i++;
+    }
+    m=i;
+    for(i=1;i<m;i++)
+    {
+        if(rem[0]<rem[i])
+            rem[0]=rem[i];
+    }
+    cout<<"highest digit in "<<k<<" is = "<<rem[0]<<endl;
+}
+int main()
+{
+    int n;
+    cout<<"Enter a number  : "<<endl;
+    cin>>n;
+    findlargestdigit(n);
+return 0;
+}
