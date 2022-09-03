@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void sum(double a,int b)
+{
+        cout<<"sum is : "<<(a+b);
+}
+void sum(int a,double b)
+{
+        cout<<"sum is : "<<(a+b);
+}
+void sum(int a,int b)
+{
+        cout<<"sum is : "<<(a+b);
+}
+void sum(double a,double b)
+{
+        cout<<"sum is : "<<(a+b);
+}
+int main()
+{
+    double m,n;
+    cout<<"Enter two numbers : "<<endl;
+    cin>>m>>n;
+    sum(m,n);
+return 0;
+}
+
