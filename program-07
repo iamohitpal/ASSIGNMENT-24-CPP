@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace sstd;
+int add(int x,int y=0 ,int z=0)
+{
+    return (x+y+z);
+}
+int main()
+{
+    int a,b,c;
+    cout<<"Enter a number : "<<endl;
+    cin>>a;
+    cout<<"sum is: "<<add(a)<<endl;
+    cout<<"\n";
+    cout<<"Enter two numbers : "<<endl;
+    cin>>a>>b;
+    cout<<"sum is : "<<add(a,b)<<endl;
+    cout<<"\n";
+    cout<<"Enter the three numbers : "<<endl;
+    cin>>a>>b>>c;
+    cout<<"sum is : "<<add(a,b,c)<<endl;
+    cout<<"\n";
+return 0;
+}
