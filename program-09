@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+float findmax(float a,float b)
+{
+    if(a>b)
+        return a;
+    else
+        return b;
+}
+int findmax(int a,int b)
+{
+        if(a>b)
+        return a;
+       else
+        return b;
+}
+int main()
+{
+    float m,n;
+    cout<<"Enter two numbers : "<<endl;
+    cin>>m>>n;
+    cout<<"maximum number is : "<<findmax(m,n)<<endl;
+return 0;
+}
