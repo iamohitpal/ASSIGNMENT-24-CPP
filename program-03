@@ -1,0 +1,18 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+double power(double x,double y)
+{
+    long double result;
+    result=pow(x,y);
+    return result;
+}
+int main()
+{
+    double k,m,n;
+    cout<<"Enter the number and its power to be calculated : "<<endl;
+    cin>>m>>n;
+    k=power(m,n);
+    cout<<m<<" to the power "<<n<<" is = "<<k<<endl;
+}
+
