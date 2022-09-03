@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+long fact (long n)
+{
+    long fact=1;
+    for(int i=1;i<=n;i++)
+    fact=fact*i;
+    return fact;
+}
+long ncr(long n , long r)
+{
+    long ncr;
+    ncr=fact(n)/(fact(r)*fact(n-r));
+    return ncr;
+}
+void printpascal(long n)
+{
+    for(long i=1;i<=n;i++)
+    {
+        for(long j=1;j<=(n-i);j++)
+        {
+            cout<<" ";
+        }
+        for(long k=0;k<=i;k++)
+        {
+            cout<<ncr(i,k)<<" ";
+        }
+        cout<<"\n";
+    }
+}
+int main()
+{
+    long n;
+    cout<<"Enter no. of rows ";
+    cin>>n;
+    printpascal(n);
+return 0;
+}
