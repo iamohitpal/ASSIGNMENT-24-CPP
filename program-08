@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+float area(float r)
+{
+    return (3.14*r*r);
+}
+float area(float l,float w)
+{
+    return (l*w);
+}
+float area(int b,int h)
+{
+    return (b*h/2);
+}
+int main()
+{
+    float R,A,B,a1,a2,a3;
+    int M,N;
+    cout<<"Enter the radius of the circle :"<<endl;
+    cin>>R;
+    a1=area(R);
+    cout<<"area of circle is :"<<a1<<endl;
+    cout<<"Enter the length and width of the rectange :"<<endl;
+    cin>>A>>B;
+    a2=area(A,B);
+    cout<<"area of rectangle is :"<<a2<<endl;
+    cout<<"Enter the base and height of the triangle :"<<endl;
+    cin>>M>>N;
+    a3=area(M,N);
+    cout<<"area of triangle is :"<<a3<<endl;
+return 0;
+}
