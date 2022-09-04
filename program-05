@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int fib(int n)
+{
+    int i,temp,f1=1,f2=1;
+    if(n<=2)
+        return 1;
+    for(i=3;i<=n;i++)
+    {
+        temp=f1+f2;
+        f1=f2;
+        f2=temp;
+    }
+    return f2;
+}
+int main()
+{
+    int i,n,value,flag=0;
+    cout<<"Enter the number to check wheather it is belongs to fibonacci series or not : ";
+    cin>>n;
+    for(i=1; ;i++)
+    {
+        value=fib(i);
+        cout<<value<<" ";
+        if(value==n)
+        {
+            flag =1;
+            break;
+        }
+        if(value>n)
+            break;
+    }
+    cout<<endl;
+    if(flag==1)
+    cout<<"Yes "<<n<<" is a term in fibonacci series !"<<endl;
+    if(flag==0)
+    cout<<n<<" is not a term in fibonacci series !"<<endl;
+return 0;
+}
